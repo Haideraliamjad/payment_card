@@ -11,14 +11,14 @@
     padding: 0;
     box-sizing: border-box; 
     font-family: 'Red Hat Display', sans-serif; 
-    box-sizing: border-box;
 }
 /*===== Variables =====*/ 
 :root 
 {
     /*primary colors*/
-    --pale-blue : hsl(225, 100%, 94%);
-    --bright-blue : hsl(245, 75%, 52%);
+    --pale-blue : hsl(225, 100%, 94%); 
+    --bright-blue : hsl(245deg 83% 62% / 28%);  
+    --bright-opacity-blue : hsl(245, 75%, 52%);  
     /*Neutral Colors*/
     --very-pale-blue : hsl(225, 100%, 98%);
     --desaturated-blue : hsl(224, 23%, 55%);
@@ -64,7 +64,6 @@ body
 }
 .main-data 
 {
-    border: 1px solid red; 
     width: 100%; 
     padding: 10px;
 }
@@ -73,10 +72,13 @@ body
     text-align: center;
     font-weight: var(--big-weight);
     color: var(--dark-blue); 
-    font-size: 1.7rem;
+    font-size: 1.7rem; 
+    margin: 0;
+    margin: 10px 0;
 }
 .paragraph 
 {
+    margin-bottom: 10px;
     text-align: center; 
     margin-left: 6px;
     margin-right: 6px;
@@ -87,8 +89,68 @@ body
     width: 300px;
     height: 60px;
     border-radius: 6px;
-    border: 1px solid red;
+    background-color: var( --bright-blue);
     display: flex;
     margin: auto; 
+    margin-top: 10px; 
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.left-card 
+{
+    width: 65%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding-right: 6px;
+}
+.right-card 
+{
+    width: 35%; 
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+}
+.main-text-block 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-text-block  > h1 
+{
+    font-weight: var(--small-weight); 
+    color: var(--dark-blue);
+}
+.right-card > a
+{
+  align-self: flex-end;    
+  color: var(--bright-opacity-blue);
+}
+.button 
+{
+    width: 300px;
+    height: 60px; 
+    margin: auto; 
+    display: block; 
+    margin-top: 10px; 
+    border: none;
+    background: var(--bright-opacity-blue); 
+    cursor: pointer;
+    border-radius: 6px;
+    color: white;
+    font-size: 1rem; 
+    font-weight: var(--medium-weight);
+}
+.button:hover 
+{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.bottom 
+{
+    text-align: center;
     margin-top: 10px;
+    cursor: pointer;
 }
