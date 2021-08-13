@@ -1,0 +1,90 @@
+/*===== Fonts link =====*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+/*===== Global Style =====*/ 
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Red Hat Display', sans-serif; 
+    box-sizing: border-box;
+}
+/*===== Variables =====*/ 
+:root 
+{
+    /*primary colors*/
+    --pale-blue : hsl(225, 100%, 94%);
+    --bright-blue : hsl(245, 75%, 52%);
+    /*Neutral Colors*/
+    --very-pale-blue : hsl(225, 100%, 98%);
+    --desaturated-blue : hsl(224, 23%, 55%);
+    --dark-blue : hsl(223, 47%, 23%); 
+    /*weight variables*/
+    --small-weight : 500;
+    --medium-weight : 700;
+    --big-weight : 900; 
+    /*shadow colors*/
+    --normal-background : rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+/*===== Main Styling Start from Here =====*/ 
+body,html 
+{
+    overflow-x: hidden;
+}
+body 
+{
+    height: 100vh;
+    width : 100vw; 
+    background-color: var(--pale-blue);
+    background-image:url("images/pattern-background-desktop.svg"); 
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*===== Main Dev Styling =====*/ 
+.main 
+{
+    width: 360px; 
+    height: 500px;
+    border-radius: 6px;
+    background-color: white; 
+    box-shadow: var(--normal-background);
+}
+.illustration 
+{
+   width: 100%; 
+   border-top-left-radius: 6px; 
+   border-top-right-radius: 6px; 
+}
+.main-data 
+{
+    border: 1px solid red; 
+    width: 100%; 
+    padding: 10px;
+}
+.heading 
+{
+    text-align: center;
+    font-weight: var(--big-weight);
+    color: var(--dark-blue); 
+    font-size: 1.7rem;
+}
+.paragraph 
+{
+    text-align: center; 
+    margin-left: 6px;
+    margin-right: 6px;
+    color : var(--desaturated-blue)
+}
+.main-card 
+{
+    width: 300px;
+    height: 60px;
+    border-radius: 6px;
+    border: 1px solid red;
+    display: flex;
+    margin: auto; 
+    margin-top: 10px;
+}
